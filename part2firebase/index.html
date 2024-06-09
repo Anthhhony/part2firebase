@@ -3,13 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login</title>
+    <link rel="webside pag" type="jpg" href="https://res.cloudinary.com/teepublic/image/private/s--iTonnKwt--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_000000,e_outline:48/co_000000,e_outline:inner_fill:48/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1552695020/production/designs/4458341_0.jpg" >
     <link rel="stylesheet" href="assets/css/styles.css">
     <script type="module" src="assets/js/script.js"></script>
     <script type="module" src="assets/js/firebase.js"></script>
 </head>
 <body>
-    
+   <h1>Registro usuario</h1>
+   <hr>
+   <form>
+    <label for="inombre">ingrese nombre: <samp>*</samp></label>
+    <input id="inombre" class="classinput" type="text" placeholder="Ej: Anthony">
+    <label for="iapellido">ingrese apellido: <samp>*</samp></label>
+    <input id="iapellido" class="classinput" type="text" placeholder="Ej: Maldonado">
+    <label for="irut">ingrese rut: <samp>*</samp></label>
+    <input id="irut" class="classinput" type="text" placeholder="Ej: 11.111.111-1">
+    <label for="iedad">ingrese edad: <samp>*</samp></label>
+    <input id="iedad" class="classinput" type="number" placeholder="Ej: 11añito">
+    <label for="itelefono">ingrese telefono: <samp>*</samp></label>
+    <input id="itelefono" class="classinput" type="tel" placeholder="Ej: 911111111">
+    <label for="igmail">ingrese gmail: <samp>*</samp></label>
+    <input id="igmail" class="classinput" type="email" placeholder="Ej: uii@fuee.com">
+    </form>
+    <form>
+    <label for="ifechaNacimiento">ingrese fecha de nacimiento: <samp>*</samp></label>
+    <input id="ifechaNacimiento" type="date">
+    <h3>ingrese color:</h3>
+    <label for="icolor1">Negro</label>
+    <input id="icolor1" type="checkbox" value="Negro">
+    <label for="icolor2">Blanco</label>
+    <input id="icolor2" type="checkbox" value="Blanco">
+    <h3>ingrese estado civil: <samp>*</samp></h3>
+    <label for="iestadoCivil">Soltero</label>
+    <input id="iestadoCivil" type="radio" value="Soltero" name="estadoCivil" >
+    <label for="iestadoCivil">Casado</label>
+    <input id="iestadoCivil" type="radio" value="Casado" name="estadoCivil">
+    <label for="icurriculum">ingrese curriculum: <samp>*</samp></label>
+    <input id="icurriculum" type="file">
+    </form>
+    <hr>
+    <button id="btnRegistrar">Registrar</button>
+   
+    <!--
     <table id="tablaDatos">
         <tbody>
             <tr>
@@ -26,5 +62,6 @@
             </tr>
         </tbody>
     </table>
+    -->
 </body>
 </html>
