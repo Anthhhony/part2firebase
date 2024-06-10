@@ -59,11 +59,11 @@ form{
     cursor:pointer;
 }
 #btnRegistrar:hover{
-    transition: 1s;
+    transition: 0.3s;
     background-color: purple;
 }
 #btnRegistrar:not(:hover){
-    transition: 1s;
+    transition: 0.3s;
     background-color: blueviolet;
 }
 .classinput{

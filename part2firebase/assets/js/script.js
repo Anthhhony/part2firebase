@@ -54,6 +54,22 @@ function validacion(){
     validarapellido("apellido")
 
 }
+
+function validarlongitud(id, parrafo, valor, l_num){
+    if(valor.trim().length <= l_num){
+        id.style.border = "green solid 3px"
+    }
+    else{
+        id.style.border = "red solid 3px";
+        parrafo.innerText = "pusiste demaciados numeros, porfavor intente corregirlo";
+        parrafo.style.display = "block"
+    }
+}
+
+function validarvalor(id,parrafo,valor){
+    
+}
+
 function validarLetra(id, parrafo, valor){
     if(valor.trim().length == 0){
         parrafo.innerText = "tienes que ingresar algo"
@@ -86,6 +102,12 @@ function validarapellido(campo){
     let apellidoP = document.getElementById("c"+campo)
     let vapellido = idapellido.value
     validarLetra(idapellido, apellidoP, vapellido)
+}
+function validaredad(campo){
+    let idedad = document.getElementById("i"+campo);
+    let edadP = document.getElementById("c"+campo);
+    let vedad = idedad.value;
+    validarlongitud(idedad, edadP, vedad, 3)
 }
 //const agregar = ()=>{
   //  let vnombre = document.getElementById("inombre").value
