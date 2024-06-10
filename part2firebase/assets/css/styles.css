@@ -13,8 +13,14 @@ th,td{
     padding: 10px;
 }
 label{
-    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
+
+#luna, #tamaño{
+    display: none;
+}
+
 
 input, label{
     font-family: Arial, Helvetica, sans-serif;
@@ -32,7 +38,6 @@ h1{
 }
 h3{
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
     text-shadow: 1px 1px 2px purple
 }
 form{
@@ -63,4 +68,39 @@ form{
 }
 .classinput{
     font-size: 15px;
+}
+#idluna{
+    position: absolute;
+    font-size: 45px;
+    top: 1%;
+    cursor: pointer;
+
+}
+#idtamaño{
+    position: absolute;
+    font-size: 40px;
+    top: 1%;
+    right: 1%;
+    cursor: pointer;
+}
+.colorclaro{
+    transition: 1s;
+    background-color: plum;
+    color: black;
+}
+.colordark{
+    transition: 1s;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+.cambioletra{
+    transition: 1s;
+    font-size: 50px;
+}
+#cnombre, #capellido{
+    display: none;
+    padding: 20px;
+    background-color: rgb(244, 31, 31);
+    color: white;
+    box-shadow: 2px 3px 5px rgb(249, 74, 74), 2px 3px 5px black;
 }

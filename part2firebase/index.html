@@ -4,43 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="webside pag" type="jpg" href="https://res.cloudinary.com/teepublic/image/private/s--iTonnKwt--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_000000,e_outline:48/co_000000,e_outline:inner_fill:48/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1552695020/production/designs/4458341_0.jpg" >
     <link rel="stylesheet" href="assets/css/styles.css">
     <script type="module" src="assets/js/script.js"></script>
     <script type="module" src="assets/js/firebase.js"></script>
 </head>
 <body>
+    <header>
    <h1>Registro usuario</h1>
+   <label for="luna" id="idluna"><i class="fa-solid fa-moon"></i></label>
+   <input id="luna" type="checkbox">
+   <label for="tamaño" id="idtamaño"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></label>
+   <input id="tamaño" type="button">
+    </header>
    <hr>
    <form>
-    <label for="inombre">ingrese nombre: <samp>*</samp></label>
+    <label for="inombre" class="classlabel">ingrese nombre: <samp>*</samp></label>
     <input id="inombre" class="classinput" type="text" placeholder="Ej: Anthony">
-    <label for="iapellido">ingrese apellido: <samp>*</samp></label>
+    <p id="cnombre">debes ingresar solo letras</p>
+    <label for="iapellido" class="classlabel">ingrese apellido: <samp>*</samp></label>
     <input id="iapellido" class="classinput" type="text" placeholder="Ej: Maldonado">
-    <label for="irut">ingrese rut: <samp>*</samp></label>
+    <p id="capellido">debes ingresar solo letras</p>
+    <label for="irut" class="classlabel">ingrese rut: <samp>*</samp></label>
     <input id="irut" class="classinput" type="text" placeholder="Ej: 11.111.111-1">
-    <label for="iedad">ingrese edad: <samp>*</samp></label>
+    <label for="iedad" class="classlabel">ingrese edad: <samp>*</samp></label>
     <input id="iedad" class="classinput" type="number" placeholder="Ej: 11añito">
-    <label for="itelefono">ingrese telefono: <samp>*</samp></label>
+    <label for="itelefono" class="classlabel">ingrese telefono: <samp>*</samp></label>
     <input id="itelefono" class="classinput" type="tel" placeholder="Ej: 911111111">
-    <label for="igmail">ingrese gmail: <samp>*</samp></label>
+    <label for="igmail" class="classlabel">ingrese gmail: <samp>*</samp></label>
     <input id="igmail" class="classinput" type="email" placeholder="Ej: uii@fuee.com">
+    <label for="ifechaNacimiento" class="classlabel">ingrese fecha de nacimiento: <samp>*</samp></label>
+    <input id="ifechaNacimiento" class="classinput" type="date">
     </form>
     <form>
-    <label for="ifechaNacimiento">ingrese fecha de nacimiento: <samp>*</samp></label>
-    <input id="ifechaNacimiento" type="date">
     <h3>ingrese color:</h3>
-    <label for="icolor1">Negro</label>
+    <label for="icolor1" class="classlabel">Negro</label>
     <input id="icolor1" type="checkbox" value="Negro">
-    <label for="icolor2">Blanco</label>
+    <label for="icolor2" class="classlabel">Blanco</label>
     <input id="icolor2" type="checkbox" value="Blanco">
     <h3>ingrese estado civil: <samp>*</samp></h3>
-    <label for="iestadoCivil">Soltero</label>
+    <label for="iestadoCivil" class="classlabel">Soltero</label>
     <input id="iestadoCivil" type="radio" value="Soltero" name="estadoCivil" >
-    <label for="iestadoCivil">Casado</label>
-    <input id="iestadoCivil" type="radio" value="Casado" name="estadoCivil">
-    <label for="icurriculum">ingrese curriculum: <samp>*</samp></label>
+    <label for="iestadoCivil1" class="classlabel">Casado</label>
+    <input id="iestadoCivil1" type="radio" value="Casado" name="estadoCivil">
+    <label for="icurriculum" class="classlabel">ingrese curriculum: <samp>*</samp></label>
     <input id="icurriculum" type="file">
+    <label for="icomentario" class="classlabel">agrega un comentario:</label>
+    <textarea id="icomentario" class="classinput"></textarea>
     </form>
     <hr>
     <button id="btnRegistrar">Registrar</button>
