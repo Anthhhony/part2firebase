@@ -21,6 +21,11 @@ label{
     display: none;
 }
 
+input{
+    padding-block: 5px;
+    padding-inline: 10px;
+    border-radius: 5px;
+}
 
 input, label{
     font-family: Arial, Helvetica, sans-serif;
@@ -97,10 +102,24 @@ form{
     transition: 1s;
     font-size: 50px;
 }
-#cnombre, #capellido{
+
+.pequeletra{
+    transition: 1s;
+    font-size: 15px;
+}
+
+#cnombre, #capellido, #cedad, #cradio{
     display: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
     background-color: rgb(244, 31, 31);
     color: white;
     box-shadow: 2px 3px 5px rgb(249, 74, 74), 2px 3px 5px black;
 }
+
+#idtamaño:hover, #idluna:hover{
+    transition: 0.3s;
+    border-bottom: 3px solid black ;
+}
+
